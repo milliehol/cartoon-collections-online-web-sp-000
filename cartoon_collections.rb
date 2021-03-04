@@ -32,16 +32,16 @@ end
 
 long_planeteer_calls(planeteer_calls)
 
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  potentially_cheesy_items = %w[dog spinach cheddar hamburger]
 
-def find_the_cheese(cheese_types)# code an argument here
+def find_the_cheese(potentially_cheesy_items)# code an argument here
   # the array below is here to help
   cheeses = %w[gouda cheddar camembert]
 
-  cheese_types.find do |maybe_cheese|
+  potentially_cheesy_items.find do |maybe_cheese|
     cheeses.include?(maybe_cheese)
   end
 
 end
 
-find_the_cheese(cheese_types)
+find_the_cheese(potentially_cheesy_items)
